@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript Nested For-Loop</h2>
+        <p id="demo"></p>
+
+        <script>
+            
+            var text="";
+            var i,j;
+            //outer for-loop
+            for(i=0;i<3;i++){
+                text += "<br>" + "i = " + i + ", j = ";
+
+                //inner for-loop
+                for(j=1;j<5;j++){
+                    document.getElementById("demo").innerHTML = text += j + " ";
+                }
+            }
+
+        </script>
+    </body>
+</html>
