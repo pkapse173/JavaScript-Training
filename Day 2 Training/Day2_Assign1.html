@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Assignment</title>
+        
+        <script>
+            //onClick function
+            function welcome() {
+               alert("Welcome to the Page")
+            }
+            
+            //onSubmit function
+            function validation() {
+            }
+
+            //onChange function
+            function upperCase() {
+            const x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+            }
+        </script>   
+    
+    </head>
+
+    <body>
+        <h2>Events in JavaScript</h2>
+        
+
+        <!--This is the OnClick demo------------>
+        <p>[1]Click the following button and see result(onClick)</p>      
+        <form>
+              <input type = "button" onclick = "welcome()" value = "Click here" />
+        </form>
+         ---------------------------------------------------------
+
+
+        <!--This is the OnSubmit demo------------>
+        <p>[2]Click and submit the button(onSubmit)</p>
+        <form method = "POST" action = "t.cgi" onsubmit = "return validate()">
+            <input type = "submit" value = "Submit" />
+        </form>   
+        -----------------------------------------------------------
+
+
+        <!-- This is the onChange demo------------>
+        <p>[3]Type in box and click outside the box(onChange)</p>
+        Enter your name: <input type="text" id="fname" onchange="upperCase()"><br>
+        -----------------------------------------------------------
+
+
+        <!-- This is the onContextmenu demo-->
+        <p>[4]Please right click on the following button(onContextmenu)</p>
+        <button type="button" oncontextmenu="alert('You have right-clicked a button!');">Right Click on Me</button><br>
+        -----------------------------------------------------------
+
+
+
+
+
+      
+   
+    </body>
+</html>

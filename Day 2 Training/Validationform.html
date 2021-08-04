@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title> JavaScript Object </title>
+        </head>
+    <body>
+
+        <script>
+            function validationForm(){
+                let x = document.forms["First"]["Firstname"].value;
+                if(x ==""){
+                    window.alert("Input can't be empty");
+                    return false;
+                }
+            }
+        </script>
+        <h2> JavaScript Validation </h2>
+        <form name="First" onsubmit="return validationForm()">
+            Firstname: <input type = "text" name = "Firstname">
+            <input type="submit" value="submit">
+    </body>
+</html>

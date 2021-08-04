@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title> JavaScript Strings </title>
+        </head>
+        <p id="string"></p>
+        <p id="string1"></p>
+        <p id="string0"></p>
+        <p id="case">hello my name is pranav kapse</p>
+        <p id="case1">HELLO MY NAME IS PRANAV KAPSE</p>
+    <body>
+        <p>String Length -- returns the length of the string </p>
+        <button onclick="ToUpperCheck()"> Click here for UpperCase</button>
+        <button onclick="ToLowerCheck()"> Click here for LowerCase</button>
+        <script>
+            let name = "Pranav" //String
+            document.getElementById("string").innerHTML ="The length of the string is" +" "+ name.length;
+
+            document.getElementById("string0").innerHTML=name.slice(0,3);
+            document.getElementById("string1").innerHTML=name.substring(1,3);
+              
+            function ToUpperCheck(){
+                let text = document.getElementById("case").innerHTML;
+                document.getElementById("case").innerHTML=text.toUpperCase();
+            }
+
+            function ToLowerCheck(){
+                let text = document.getElementById("case1").innerHTML;
+                document.getElementById("case1").innerHTML=text.toLowerCase();
+            }
+        </script>
+    </body>
+</html>

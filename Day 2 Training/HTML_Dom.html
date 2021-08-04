@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title> JavaScript DOM </title>
+        </head>
+    <body>
+        <p>This is an example to find HTML Tag Name</p>
+        <p>Programming is fun <b> Programming with Pranav </b></p>
+        <p id="Example"></p>
+        <p id="pass">Let's check what happens</p>
+        <script>
+            const element = document.getElementsByTagName("p");
+            document.getElementById("Example").innerHTML=
+            "The letter present in the first paragraph(index 0) is" + element[0].innerHTML;
+
+            document.getElementById("pass").innerHTML="Programming with Pranav";
+
+            document.write("javascript");
+            document.write(Date());
+
+        </script>
+    </body>
+</html>

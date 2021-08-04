@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title> JavaScript Object </title>
+        </head>
+    <body>
+        <p id="object1"></p>
+        <p id="object2"></p>
+        <p id="object3"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+
+        <script>
+
+            const car = {name:"Hyundai i20",type:"Manual",model:"2019",color:"White"};
+            document.getElementById("object1").innerHTML = "The name of the car"+" "+ car.name;
+            document.getElementById("object2").innerHTML = "The type of the car"+" "+ car.type;
+            document.getElementById("object3").innerHTML = "The model of the car"+" "+ car.model;
+
+            const capital = {
+                //property  : //property value
+                India : "DELHI",
+                Thailand : "BANGKOK",
+                Malaysia : "KAULA LUMPUR",
+                Japan : "TOKYO"
+            };
+            //Accessing  ObjectProperties----- 
+            document.getElementById("demo1").innerHTML = "Capital of India is "+ capital.India;
+            document.getElementById("demo2").innerHTML = "Capital of Thailand is "+ capital.Thailand;
+            document.getElementById("demo3").innerHTML = "Capital of Malaysia is "+ capital.Malaysia;
+            document.getElementById("demo4").innerHTML = "Capital of Japan is "+ capital.Japan;
+
+            const person ={
+                firstname : "Pranav",
+                lastname : "Kapse",
+                id : 123456,
+                city : "Pune",
+                Pin : 411041,
+                fullname : function(){
+                    return this.firstname + " " + this.lastname;
+                }
+            };
+            document.getElementById("demo5").innerHTML = "My full name is "+ person.fullname();
+
+        </script>
+
+    </body>
+</html>
