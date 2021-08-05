@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>JavaScript Callback</title>
+    </head>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <body>
+        <script>
+
+            function callback(parameters){
+                document.getElementById("demo").innerHTML=parameters;
+            }
+
+            function callback1(parameters){
+                document.getElementById("demo1").innerHTML=parameters;
+            }
+
+            function callback2(parameters){
+                document.getElementById("demo2").innerHTML=parameters;
+            }
+
+            function coffee(){
+                callback("Hello");
+            }
+
+            function object(){
+                callback1("Good Morning")
+            }
+
+            function training(){
+                callback2("We are learning about JavaScript callback");
+            }
+
+            coffee();
+            object();
+            training();
+        </script>        
+    </body>
+</html>

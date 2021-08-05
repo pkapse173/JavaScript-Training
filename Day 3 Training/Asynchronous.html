@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>JavaScript Asynchronous callback mechanism</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+
+            setTimeout(serverdisplay,2000);
+            function serverdisplay(){
+                document.getElementById("demo").innerHTML="Hello my name is Server1";
+            }
+
+            setTimeout(function(){myfunction("Hello my name is Server2");},3000);
+            function myfunction(param){
+                document.getElementById("demo1").innerHTML=param;
+            }
+            
+        </script>
+    </body>
+</html>

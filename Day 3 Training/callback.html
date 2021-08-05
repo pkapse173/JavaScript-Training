@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>JavaScript Callback</title>
+    </head>
+    <body>
+      <p id="demo"><p>  
+      <p id="demo1"></p>
+        <script>
+
+            function result(param){
+                document.getElementById("demo").innerHTML=param;
+            }
+
+            function calculator(num1,num2){
+                let sum = num1 + num2;
+                return sum;
+            }
+
+            let total = calculator(100,200);
+            result(total);
+
+           
+            function display(argument){
+                document.getElementById("demo1").innerHTML=argument;
+            }
+
+            function result1(n1,n2){
+                let s = n1 + n2;
+                display(s);
+            }
+
+            result1(10,10);
+        </script>
+    </body>

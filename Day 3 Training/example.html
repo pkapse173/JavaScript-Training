@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>JavaScript Asyncronous Example</title>
+    </head>
+    <body>
+        <p id="server"></p>
+        <script>
+            function display(parameters){
+                document.getElementById("server").innerHTML=parameters;
+            }
+
+                function getfile(send){
+                    let request = new XMLHttpRequest(); //establishing connection request
+                    //request.open('GET','C:\Users\888181\OneDrive - Cognizant\Desktop\JS-Training\Day 3\image');  //opening file
+                    request.open('GET','https://en.wikipedia.org/wiki/Dinosaur');  //opening file
+                    request.onload=function(){       //loading server connection
+                        if(request.status == 200)    //200 is connection established
+                        {
+                            send(this.responseText);
+                        }else{
+                            send("Error: " + request.status);
+                        }
+                    }
+                    request.send();
+                }
+                getfile(display);
+            
+        </script>
+    </body>
+    
