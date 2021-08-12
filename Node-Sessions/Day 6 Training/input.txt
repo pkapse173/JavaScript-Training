@@ -1,0 +1,7 @@
+Hello to this input page.
+
+This file is running fine.
+
+Thank you!!!
+
+After piping
